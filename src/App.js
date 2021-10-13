@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Button from './Components/Button';
+import { Button } from './Components/Button';
 import Input from './Components/Input';
 import Textarea from './Components/Textarea';
 import Modal from './Components/Modal';
