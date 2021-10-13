@@ -1,0 +1,101 @@
+.button-container {
+
+  button {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    outline: 0;
+    border: 0;
+  }
+
+  .primary {
+    background: $primary;
+    color: $white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-shadow: 0, 0, 0, rgba($black, 0);
+    transition: all .25s ease;
+
+    &:hover {
+      background: lighten($primary, 10%);
+      transform: translateY(-1px) scale(1.025);
+      box-shadow: 0 10px 5px -8px rgba($black, .7);
+    }
+  }
+
+  .secondary {
+    background: $secondary;
+    color: $black;
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-shadow: 0, 0, 0, rgba($black, 0);
+    transition: all .25s ease;
+
+    &:hover {
+      background: lighten($secondary, 10%);
+      transform: translateY(-1px) scale(1.025);
+      box-shadow: 0 10px 5px -8px rgba($black, .7);
+    }
+  }
+
+  .success {
+    background: $success;
+    color: $black;
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-shadow: 0, 0, 0, rgba($black, 0);
+    transition: all .25s ease;
+
+    &:hover {
+      background: lighten($success, 10%);
+      transform: translateY(-1px) scale(1.025);
+      box-shadow: 0 10px 5px -8px rgba($black, .7);
+    }
+  }
+
+  .warn {
+    background: $warn;
+    color: $black;
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-shadow: 0, 0, 0, rgba($black, 0);
+    transition: all .25s ease;
+
+    &:hover {
+      background: lighten($warn, 10%);
+      transform: translateY(-1px) scale(1.025);
+      box-shadow: 0 10px 5px -8px rgba($black, .7);
+    }
+  }
+
+  .danger {
+    background: $danger;
+    color: $white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-shadow: 0, 0, 0, rgba($black, 0);
+    transition: all .25s ease;
+
+    &:hover {
+      background: lighten($danger, 10%);
+      transform: translateY(-1px) scale(1.025);
+      box-shadow: 0 10px 5px -8px rgba($black, .7);
+    }
+  }
+
+
+  span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple .8s linear;
+    background-color: rgba($white, 0.7);
+  }
+
+  @keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+}

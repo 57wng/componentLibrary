@@ -1,0 +1,68 @@
+.input-container {
+  position: relative;
+  height: 2rem;
+  max-width: 100vw;
+  margin-top: 1rem;
+  background: darken($white, 5%);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  input {
+    background: none;
+    border: none;
+    height: 2rem;
+    width: 100%;
+    font-size: 1rem !important;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus ~ .underline {
+      height: 4px;
+      background-image: linear-gradient(90deg,$primary,$secondary);
+    }
+
+    &:not(:placeholder-shown) + label,
+    &:focus + label {
+      font-size: .75rem;
+      top: -.75rem !important;
+      color: $primary;
+      font-weight: 700;
+      transform: translate(0, 0);
+
+      .required {
+        font-size: .75rem;
+      }
+    }
+
+
+  }
+
+  .underline {
+    width: 100%;
+    background-image: linear-gradient($grey, $grey);
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .3s ease;
+  }
+
+  label {
+    position: absolute;
+    left: 10px;
+    font-size: 1rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: .3s ease;
+
+    .required {
+      color: $danger;
+      transition: .3s ease;
+    }
+  }
+}
