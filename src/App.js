@@ -3,13 +3,10 @@ import { Button } from './Components/Button';
 import Input from './Components/Input';
 import Textarea from './Components/Textarea';
 import Modal from './Components/Modal';
+import Avatar from './Components/Avatar';
 
 const App = () => {
   const [text, setText] = useState('');
-  const [number, setNumber] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [textarea, setTextarea] = useState('');
 
   const buttonTest = () => {
     fetch('https://jsonplaceholder.typicode.com/todos/1')
@@ -19,11 +16,14 @@ const App = () => {
 
   return (
     <div data-test="app-component" className="App">
+      <Avatar
+        customClass={'avatar-class'}
+        size={'lg'}
+        image={
+          'https://www.participate.nyc.gov/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg'
+        }
+      />
       <Button value={'Button Text'} color={'primary'} onClick={() => buttonTest()} />
-      <Button value={'Button Text'} color={'secondary'} />
-      <Button value={'Button Text'} color={'success'} />
-      <Button value={'Button Text'} color={'warn'} />
-      <Button value={'Button Text'} color={'danger'} />
       <Input
         type={'text'}
         placeholder={'Text'}
@@ -31,46 +31,6 @@ const App = () => {
         onChange={(e) => setText(e)}
         required={true}
       />
-      <Input
-        type={'number'}
-        placeholder={'Number'}
-        value={number}
-        onChange={(e) => setNumber(e)}
-        required={true}
-      />
-      <Input
-        type={'email'}
-        placeholder={'Email'}
-        value={email}
-        onChange={(e) => setEmail(e)}
-        required={true}
-      />
-      <Input
-        type={'password'}
-        placeholder={'Password'}
-        value={password}
-        onChange={(e) => setPassword(e)}
-        required={true}
-      />
-      <Textarea
-        type={'password'}
-        placeholder={'Text Area'}
-        rows={10}
-        value={textarea}
-        onChange={(e) => setTextarea(e)}
-        required={true}
-      />
-
-      <Modal value={'Modal Open'}>
-        <Input
-          type={'text'}
-          placeholder={'Name'}
-          value={text}
-          onChange={(e) => setText(e)}
-          required={true}
-        />
-        <Button customClass={'submit-button'} value={'Submit'} color={'success'} />
-      </Modal>
       <h1>H1</h1>
       <h2>H2</h2>
       <h3>H3</h3>

@@ -1,0 +1,17 @@
+.avatar-container {
+  img {
+    border-radius: 50%;
+    border: $primary 2px solid;
+  }
+  .lg {
+    width: 10rem;
+  }
+
+  .md {
+    width: 5rem;
+  }
+
+  .sm {
+    width: 2rem;
+  }
+}
