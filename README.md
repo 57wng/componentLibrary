@@ -38,7 +38,7 @@ $grey-dark:  #444;
 
 #### DO NOT DELETE FROM LIST UNTIL DOCUMENTATION AND TESTING IS COMPLETE
 
-if it is currently in progress please put a link to the working branch and your name in the `by` column.
+if it is currently in progress please put a link to the working branch in the `in progress` column and your name in the `by` column.
 
 | tags | in progress | by | example |
 |--|--|--|--|
