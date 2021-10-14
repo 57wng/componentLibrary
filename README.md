@@ -23,6 +23,7 @@ README [text editor](https://stackedit.io)
 
 
 Install - `npm i 57wng`
+<br/>
 Import - `import {Componenent} from '57wng/dist`
 
 ### Change Standard SCSS Variables
