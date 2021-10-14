@@ -1,5 +1,7 @@
 # 57 Wing Component Library
 
+### DO NOT WORK ON `MASTER` BRANCH
+
 install - `npm i 57wng`
 
 import - `import {Componenent} from '57wng/dist`
@@ -49,7 +51,7 @@ if it is currently in progress please put a link to the working branch in the `i
 | Radio |  |  | [here](https://mui.com/components/radio-buttons/) |  
 | A |  |  | [here](https://mui.com/components/links/) |
 
-if it is currently in progress please put a link to the working branch.
+if it is currently in progress please put a link to the working branch in the `in progress` column and your name in the `by` column.
 
 | components | in progress | by | example |
 |--|--|--|--|
