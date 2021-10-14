@@ -53,8 +53,6 @@ if it is currently in progress please put a link to the working branch.
 |--|--|--|--|
 | Notification |  |  | [here](https://mui.com/components/snackbars/) |
 | Alert |  |  | [here](https://mui.com/components/alert/) |
-| Accordion | |  |  | [here](https://mui.com/components/accordion/) |
+| Accordion |  |  | [here](https://mui.com/components/accordion/) |
 | Card |  |  | [here](https://mui.com/components/cards/) |
 | Nav |  |  | [here](https://material.io/components/navigation-drawer#anatomy) |
-
-<hr/>
