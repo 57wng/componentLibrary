@@ -92,8 +92,8 @@ const Component = ({value, customClass}) => {
   return (
     <div>
       <Modal value="Open Modal" customClass="custom-modal-class">
-				<h1>Modal Title</h1>
-				<p>Some Content for the Modal</p>
+        <h1>Modal Title</h1>
+        <p>Some Content for the Modal</p>
       </Modal
     </div>
   )
@@ -108,8 +108,8 @@ export default Component;
 
 ### Avatar
 
-PROPS <br/> <br/>
-
+PROPS 
+<br/>
 `size` - changes the size of the avatar image <br/>
 `image` - url pointing to an image file <br/>
 `customClass` - adds a class to the avatar component container  <br/> <br/>
