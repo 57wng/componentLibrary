@@ -154,9 +154,9 @@ const Component = () => {
     </div>
   )
 }
-```
 
 export default Component;
+```
 
 ## INFO DISPLAY
 [top](#table-of-contents)
