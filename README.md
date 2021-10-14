@@ -19,6 +19,7 @@ README [text editor](https://stackedit.io)
 2. [Info Display](#info-display)
 	1. [Modal](#modal)
 	2. [Avatar](#avatar)
+	3. [Loading](#loading)
 
 ## GETTING STARTED
 
@@ -80,6 +81,12 @@ $grey-dark:  #444;
 
 
 ### Avatar
+
+```
+
+```
+
+### Loading
 
 ```
 
