@@ -1,6 +1,3 @@
-
-
-
 # 57 Wing Component Library
 
 ## QUICK NOTE
@@ -60,8 +57,6 @@ $grey-dark:  #444;
 
 <hr/>
 
-
-
 ### Input
 
 ```
@@ -69,8 +64,6 @@ $grey-dark:  #444;
 ```
 
 <hr/>
-
-
 
 ### Textarea
 
@@ -82,9 +75,10 @@ $grey-dark:  #444;
 [top](#table-of-contents)
 
 ### Modal
-PROPS  <br/> <br/>
+PROPS  <br/>
 `value` - The text inside the button that opens the modal  <br/>
 `customClass` - adds a custom class to the container of the Modal <br/> <br/>
+
 ```
 import {Modal} from '57wng/dist';
 
@@ -104,23 +98,18 @@ export default Component;
 
 <hr/>
 
-
-
 ### Avatar
 
-PROPS 
-<br/>
+PROPS <br/>
 `size` - changes the size of the avatar image <br/>
 `image` - url pointing to an image file <br/>
 `customClass` - adds a class to the avatar component container  <br/> <br/>
-
 
 | Size | size |
 |--|--|
 | "lg" | 200px |
 | "md" | 100px |
 | "sm" | 50px |
- <br/> <br/>
 
 ```
 import {Avatar} from '57wng/dist';
@@ -140,7 +129,7 @@ export default Component;
 
 ### Loading
 
-PROPS <br/> <br/>
+PROPS <br/>
 `customClass` - adds a custom class to loading container.  <br/> <br/>
 
 The loading component does not take any customization props. The external spinning circle is the `$secondary` color and the inner spinning circle is the `$primary` color. <br/> <br/>
@@ -160,7 +149,6 @@ const Component = () => {
 
 export default Component;
 ```
-
 
 ## TODO 
 
