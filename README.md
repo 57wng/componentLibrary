@@ -46,7 +46,7 @@ $grey-dark:  #444;
 ```
 
 ## DATA INPUTS
-
+[top](#table-of-contents)
 ### Button
 
 ```
@@ -68,7 +68,7 @@ $grey-dark:  #444;
 ```
 
 ## INFO DISPLAY
-
+[top](#table-of-contents)
 
 ### Modal
 
@@ -134,3 +134,5 @@ if it is currently in progress please put a link to the working branch in the `i
 | Toggle |  |  | [here](https://mui.com/components/toggle-button/) |
 | GhostLoader |  |  | [here](https://mui.com/components/skeleton/) |
 | Graph |  |  | [here](https://material.io/design/communication/data-visualization.html#types) |
+
+[top](#table-of-contents)
