@@ -25,7 +25,7 @@ const Modal = ({ children, value, customClass }) => {
       <Button
         data-test={'open-button'}
         color={'primary'}
-        value={value}
+        value={value === undefined ? 'Open' : value}
         onClick={() => setIsOpen(!isOpen)}
       />
     </div>

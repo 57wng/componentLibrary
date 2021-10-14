@@ -13,9 +13,9 @@ const Input = ({ placeholder, value, type, required, onChange, customClass }) =>
         className={'form__field'}
         autoComplete="off"
         id={placeholder}
-        type={type}
+        type={type === undefined ? 'text' : type}
         value={value}
-        required={required}
+        required={required === undefined ? false : true}
         placeholder={' '}
         onChange={(e) => onChange(e.target.value)}
       />

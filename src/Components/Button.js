@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Button = ({ value, color, onClick, customClass }) => {
+export const Button = ({ value, color, disabled, onClick, customClass }) => {
   const createRipple = (event) => {
     const button = event.currentTarget;
 
@@ -26,6 +26,7 @@ export const Button = ({ value, color, onClick, customClass }) => {
     <div className={'button-container'} data-test={'button-component'}>
       <button
         data-test={'button'}
+        disabled={disabled === undefined ? false : true}
         onClick={(e) => {
           createRipple(e);
           if (typeof onClick === 'function') {

@@ -7,11 +7,7 @@ import Loading from './Components/Loading';
 const App = () => {
   const [text, setText] = useState('');
 
-  const buttonTest = () => {
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then((response) => response.json())
-      .then((json) => console.log(json));
-  };
+  const buttonTest = () => {};
 
   return (
     <div data-test="app-component" className="App">
@@ -22,7 +18,7 @@ const App = () => {
           'https://www.participate.nyc.gov/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg'
         }
       />
-      <Loading/>
+      <Loading />
       <Button value={'Button Text'} color={'primary'} onClick={() => buttonTest()} />
       <Input
         type={'text'}

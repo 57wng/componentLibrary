@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Textarea = ({ placeholder, value, type, rows, required, onChange, customClass }) => {
+const Textarea = ({ placeholder, value, rows, required, onChange, customClass }) => {
   return (
     <div
       data-test={'textarea-component'}
@@ -17,10 +17,10 @@ const Textarea = ({ placeholder, value, type, rows, required, onChange, customCl
         autoComplete="off"
         id={placeholder}
         style={{
-          height: `${rows}rem`,
+          height: `${rows === undefined ? 5 : rows}rem`,
         }}
         value={value}
-        required={required && true}
+        required={required === undefined ? false : true}
         placeholder={' '}
         onChange={(e) => onChange(e.target.value)}
       />
