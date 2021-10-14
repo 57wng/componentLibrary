@@ -1,4 +1,5 @@
 
+
 # 57 Wing Component Library
 
 ## QUICK NOTE
@@ -56,12 +57,18 @@ $grey-dark:  #444;
 
 ```
 
+<hr/>
+
+
 
 ### Input
 
 ```
 
 ```
+
+<hr/>
+
 
 
 ### Textarea
@@ -79,17 +86,54 @@ $grey-dark:  #444;
 
 ```
 
+<hr/>
+
+
 
 ### Avatar
 
-```
+PROPS
+`size` - changes the size of the avatar image <br/>
+`image` - url pointing to an image file <br/>
+`customClass` - adds a class to the avatar component container  <br/>
+
+
+| Size | size |
+|--|--|
+| "lg" | 200px |
+| "md" | 100px |
+| "sm" | 50px |
 
 ```
+import {Avatar} from '57wng/dist';
+
+const Component = () => {
+	return (
+		<div>
+			<Avatar size="md" image="image.jpg" customClass="custom-avatar-class"/>
+		</div>
+	)
+}
+
+export default Component;
+```
+
+<hr/>
 
 ### Loading
-
+The loading component does not take any customization props. The external spinning circle is the `$secondary` color and the inner spinning circle is the `$primary` color.
 ```
+import {Loading} from '57wng/dist';
 
+const Component = () => {
+	return (
+		<div>
+			<Loading />
+		</div>
+	)
+}
+
+export default Component;
 ```
 
 
