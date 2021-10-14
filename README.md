@@ -28,3 +28,33 @@ $grey-dark:  #444;
 ```
 
 ```
+
+
+<hr/>
+
+## HIGH PRIORITY
+
+#### DO NOT DELETE FROM LIST UNTIL DOCUMENTATION AND TESTING IS COMPLETE
+
+if it is currently in progress please put a link to the working branch and your name in the by column.
+
+| tags | in progress | by | example |
+|--|--|--|--|
+| Select |  |  | [here](https://mui.com/components/selects/) |
+| Slider |  |  | [here](https://mui.com/components/slider/) | 
+| Badge |  |  | [here](https://mui.com/components/badges/) |
+| Chip |  |  | [here](https://mui.com/components/chips/) |  
+| Radio |  |  | [here](https://mui.com/components/radio-buttons/) |  
+| A |  |  | [here](https://mui.com/components/links/) |
+
+if it is currently in progress please put a link to the working branch.
+
+| components | in progress | by | example |
+|--|--|--|--|
+| Notification |  |  | [here](https://mui.com/components/snackbars/) |
+| Alert |  |  | [here](https://mui.com/components/alert/) |
+| Accordion | |  |  | [here](https://mui.com/components/accordion/) |
+| Card |  |  | [here](https://mui.com/components/cards/) |
+| Nav |  |  | [here](https://material.io/components/navigation-drawer#anatomy) |
+
+<hr/>
