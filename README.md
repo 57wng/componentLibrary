@@ -55,25 +55,108 @@ $grey-dark:  #444;
 [top](#table-of-contents)
 ### Button
 
-```
+PROPS  <br/>
+`value` - The text inside the button  <br/>
+`color` - color of the button ("primary", "secondary", "success", "warn", "danger") <br/>
+`onClick` - Function to be called when the button is clicked.<br/>
+`customClass` - adds a custom class to the container of the Button <br/> <br/>
 
+```
+import React from 'react';
+import { Button } from '57wng/dist';
+
+const Component = () => {
+
+  const buttonTest = () => {
+    console.log("Button is working");
+  };
+
+  return (
+    <div>
+      <Button
+        value="Button Text"
+        color="primary"
+        onClick={()  => buttonTest()} 
+        customClass="custom-button-class"
+    </div>
+  )
+}
+
+export default Button;
 ```
 
 <hr/>
 
 ### Input
 
-```
+PROPS  <br/>
+`value` - The text inside the input that the user enters (this is based on state)  <br/>
+`type` REQUIRED - The type of input field you need ex:("text", "email", "number", "password") <br/>
+`onChange` - Function to change the state of the value.<br/>
+`placeholder` - Placeholder/ Label for the input<br/>
+`required` - Is this a required field or not? Takes a boolean value.<br/>
+`customClass` - adds a custom class to the container of the Modal <br/> <br/>
 
+```
+import React, { useState } from 'react;
+import { Input } from '57wng/dist';
+
+const Component = () => {
+  const [text, setText] = useState('');
+  
+  return (
+    <div>
+      <Input
+        value={text}
+        type="text"
+        placeholder="Text Placeholder"
+        required={true}
+        onChange={(event) => setText(event)}
+        customClass="custom-input-class"
+      />
+    </div>
+  )
+}
+
+export default Component;
 ```
 
 <hr/>
 
 ### Textarea
 
-```
+PROPS  <br/>
+`value` - The text inside the input that the user enters (this is based on state)  <br/>
+`onChange` - Function to change the state of the value.<br/>
+`placeholder` - Placeholder/ Label for the input<br/>
+`rows` - General height of the textarea<br/>
+`required` - Is this a required field or not? Takes a boolean value.<br/>
+`customClass` - adds a custom class to the container of the Modal <br/> <br/>
 
 ```
+import React, { useState } from 'react;
+import { Textarea } from '57wng/dist';
+
+const Component = () => {
+  const [text, setText] = useState('');
+  
+  return (
+    <div>
+      <Textarea
+        value={text}
+        type="text"
+        rows={5}
+        placeholder="Text Placeholder"
+        required={true}
+        onChange={(event) => setText(event)}
+        customClass="custom-textarea-class"
+      />
+    </div>
+  )
+}
+```
+
+export default Component;
 
 ## INFO DISPLAY
 [top](#table-of-contents)
@@ -84,9 +167,10 @@ PROPS  <br/>
 `customClass` - adds a custom class to the container of the Modal <br/> <br/>
 
 ```
-import {Modal} from '57wng/dist';
+import React from 'react';
+import { Modal } from '57wng/dist';
 
-const Component = ({value, customClass}) => {
+const Component = () => {
   return (
     <div>
       <Modal value="Open Modal" customClass="custom-modal-class">
@@ -116,7 +200,8 @@ PROPS <br/>
 | "sm" | 50px |
 
 ```
-import {Avatar} from '57wng/dist';
+import React from 'react';
+import { Avatar } from '57wng/dist';
 
 const Component = () => {
   return (
@@ -141,7 +226,8 @@ The loading component does not take any customization props. The external spinni
 To customize the circles color add a `customClass` prop and then select `.external-circle` and `.internal-circle`. to change the color use `stroke: $color;` <br/> <br/>
 
 ```
-import {Loading} from '57wng/dist';
+import React from 'react';
+import { Loading } from '57wng/dist';
 
 const Component = () => {
   return (
