@@ -29,7 +29,7 @@ README [text editor](https://stackedit.io)
 
 Install - `npm i 57wng`
 <br/>
-Import - `import {Componenent} from '57wng/dist`
+Import - `import {Componenent} from '57wng/dist';`
 
 ### Change Standard SCSS Variables
 
@@ -91,7 +91,7 @@ export default Button;
 
 PROPS  <br/>
 `value` - The text inside the input that the user enters (this is based on state)  <br/>
-`type` REQUIRED - The type of input field you need ex:("text", "email", "number", "password") <br/>
+`type` - The type of input field you need ex:("text", "email", "number", "password") <br/>
 `onChange` - Function to change the state of the value.<br/>
 `placeholder` - Placeholder/ Label for the input<br/>
 `required` - Is this a required field or not? Takes a boolean value.<br/>
@@ -128,7 +128,7 @@ export default Component;
 PROPS  <br/>
 `value` - The text inside the input that the user enters (this is based on state)  <br/>
 `onChange` - Function to change the state of the value.<br/>
-`placeholder` - Placeholder/ Label for the input<br/>
+`placeholder` - Placeholder/ Label for the textarea<br/>
 `rows` - General height of the textarea<br/>
 `required` - Is this a required field or not? Takes a boolean value.<br/>
 `customClass` - adds a custom class to the container of the Modal <br/> <br/>
@@ -154,9 +154,9 @@ const Component = () => {
     </div>
   )
 }
+```
 
 export default Component;
-```
 
 ## INFO DISPLAY
 [top](#table-of-contents)
