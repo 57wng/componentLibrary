@@ -2,7 +2,9 @@ import React from "react";
 
 const Loading = () => {
   return (
-    <div data-test={"loading-component"} className='loading-container'>
+    <div
+    data-test={"loading-component"}
+    className='loading-container'>
       <svg
         className="loader"
         viewBox="0 0 120 120"

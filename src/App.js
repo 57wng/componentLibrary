@@ -3,6 +3,7 @@ import { Button } from './Components/Button';
 import Input from './Components/Input';
 import Avatar from './Components/Avatar';
 import Loading from './Components/Loading';
+import Radio from './Components/Radio';
 
 const App = () => {
   const [text, setText] = useState('');
@@ -22,7 +23,7 @@ const App = () => {
           'https://www.participate.nyc.gov/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg'
         }
       />
-      <Loading/>
+      <Radio input1={'One'} input2={'Two'} input3={'Three'}/>
       <Button value={'Button Text'} color={'primary'} onClick={() => buttonTest()} />
       <Input
         type={'text'}
