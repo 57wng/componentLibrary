@@ -7,7 +7,7 @@
 ##### Branch Naming
 `Feature/Bug/Hotfix_NameOfComponent_BranchedFrom_ByDeveloper`
 <br/>
-`Feature/Radio_Main_FirstName-LastName`
+`Feature/Radio_Main_FirstNameLastName`
 
 ### Table Of Contents
 README [text editor](https://stackedit.io)
