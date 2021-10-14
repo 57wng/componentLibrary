@@ -82,9 +82,9 @@ $grey-dark:  #444;
 [top](#table-of-contents)
 
 ### Modal
-PROPS  <br/>
+PROPS  <br/> <br/>
 `value` - The text inside the button that opens the modal  <br/>
-`customClass` - adds a custom class to the container of the Modal <br/>
+`customClass` - adds a custom class to the container of the Modal <br/> <br/>
 ```
 import {Modal} from '57wng/dist';
 
@@ -108,10 +108,11 @@ export default Component;
 
 ### Avatar
 
-PROPS <br/>
+PROPS <br/> <br/>
+
 `size` - changes the size of the avatar image <br/>
 `image` - url pointing to an image file <br/>
-`customClass` - adds a class to the avatar component container  <br/>
+`customClass` - adds a class to the avatar component container  <br/> <br/>
 
 
 | Size | size |
@@ -119,6 +120,7 @@ PROPS <br/>
 | "lg" | 200px |
 | "md" | 100px |
 | "sm" | 50px |
+ <br/> <br/>
 
 ```
 import {Avatar} from '57wng/dist';
@@ -138,12 +140,12 @@ export default Component;
 
 ### Loading
 
-PROPS <br/>
-`customClass` - adds a custom class to loading container.  <br/>
+PROPS <br/> <br/>
+`customClass` - adds a custom class to loading container.  <br/> <br/>
 
-The loading component does not take any customization props. The external spinning circle is the `$secondary` color and the inner spinning circle is the `$primary` color.
- <br/> <br/>
-To customize the circles color add a `customClass` prop and then select `.external-circle` and `.internal-circle`. to change the color use `stroke: $color;` <br/>
+The loading component does not take any customization props. The external spinning circle is the `$secondary` color and the inner spinning circle is the `$primary` color. <br/> <br/>
+
+To customize the circles color add a `customClass` prop and then select `.external-circle` and `.internal-circle`. to change the color use `stroke: $color;` <br/> <br/>
 
 ```
 import {Loading} from '57wng/dist';
