@@ -142,7 +142,7 @@ PROPS <br/>
 `customClass` - adds a custom class to loading container.  <br/>
 
 The loading component does not take any customization props. The external spinning circle is the `$secondary` color and the inner spinning circle is the `$primary` color.
- <br/>
+ <br/> <br/>
 To customize the circles color add a `customClass` prop and then select `.external-circle` and `.internal-circle`. to change the color use `stroke: $color;` <br/>
 
 ```
