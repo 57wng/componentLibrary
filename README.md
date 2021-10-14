@@ -92,7 +92,7 @@ $grey-dark:  #444;
 
 ### Avatar
 
-PROPS
+PROPS <br/>
 `size` - changes the size of the avatar image <br/>
 `image` - url pointing to an image file <br/>
 `customClass` - adds a class to the avatar component container  <br/>
