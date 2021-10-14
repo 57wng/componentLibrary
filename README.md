@@ -14,11 +14,12 @@
 ## Table Of Contents
 README [text editor](https://stackedit.io)
 
- 1. [Data Inputs](#data-inputs)
+ 1. [Getting Started](#getting-started)
+ 2. [Data Inputs](#data-inputs)
 	1. [Button](#button)
 	2. [Input](#input)
 	3. [Textarea](#textarea)
-2. [Info Display](#info-display)
+3. [Info Display](#info-display)
 	1. [Modal](#modal)
 	2. [Avatar](#avatar)
 	3. [Loading](#loading)
