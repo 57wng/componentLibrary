@@ -5,9 +5,9 @@
 ### DO NOT WORK ON `MASTER` BRANCH
 
 ##### Branch Naming
-`Feature/Bug/Hotfix_NameOfComponent_ByDeveloper`
+`Feature/Bug/Hotfix_NameOfComponent_BranchedFrom_ByDeveloper`
 <br/>
-`Feature/RadioButton_EMcpheron`
+`Feature/Radio_Main_FirstName-LastName`
 
 ### Table Of Contents
 README [text editor](https://stackedit.io)
