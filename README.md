@@ -1,4 +1,5 @@
 
+
 # 57 Wing Component Library
 
 ## QUICK NOTE
@@ -78,6 +79,7 @@ const Component = () => {
         color="primary"
         onClick={()  => buttonTest()} 
         customClass="custom-button-class"
+      />
     </div>
   )
 }
@@ -154,9 +156,44 @@ const Component = () => {
     </div>
   )
 }
-```
 
 export default Component;
+```
+[top](#table-of-contents)
+### Radio
+
+PROPS  <br/>
+`options` - takes and array of Integers or Strings and displays these values as options  <br/>
+`name` - sets a title for the radio group to tie the different radio options to a group <br/>
+`inline` - Boolean value to force radio to inline. (Defaults to a column view) <br/>
+`onChange` - Accepts a state function <br/>
+`state` - REQUIRED** changes the state from the onChange prop <br/>
+`customClass` - adds a custom class to the container of the Button <br/> <br/>
+
+```
+import React, { useState } from 'react';
+import { Button } from '57wng/dist';
+
+const Component = () => {
+  const [state, setState] = useState('');
+
+  return (
+    <div>
+      <Radio
+        options={['Option 1',  'Option 2']}
+        name={'TEST'}
+        inline={true}
+        onChange={(event)  => setState(event)}
+        state={state}
+      />
+    </div>
+  )
+}
+
+export default Button;
+```
+
+<hr/>
 
 ## INFO DISPLAY
 [top](#table-of-contents)
