@@ -5,15 +5,15 @@
     width: 100vw;
     top: 0;
     right: 0;
-    background: rgba($black, .5);
+    background: rgba($black, 0.5);
   }
 
   &__body {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    background: white;
+    transform: translate(-50%, -50%);
+    background: $white;
     width: 80%;
     padding: 2rem;
     border-radius: 15px;
