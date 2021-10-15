@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-const Radio = ({ options, name, inline, onChange, state }) => {
+const Radio = ({ options, name, inline, onChange, state, customClass }) => {
   return (
     options !== undefined && (
-      <div data-test="radio-component" className={`radio-container  ${inline ? 'inline' : ''}`}>
+      <div data-test="radio-component" className={`radio-container  ${inline ? 'inline' : ''}  ${customClass === undefined ? '' : customClass}`}>
         {options.map((input, idx) => {
           return (
             <div className={`radio-input ${inline ? 'inline' : ''}`} key={idx}>
