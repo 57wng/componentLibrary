@@ -85,7 +85,7 @@ const Component = () => {
   )
 }
 
-export default Button;
+export default Component;
 ```
 
 <hr/>
@@ -169,11 +169,11 @@ PROPS  <br/>
 `inline` - Boolean value to force radio to inline. (Defaults to a column view) <br/>
 `onChange` - Accepts a state function <br/>
 `state` - REQUIRED** changes the state from the onChange prop <br/>
-`customClass` - adds a custom class to the container of the Button <br/> <br/>
+`customClass` - adds a custom class to the container of the Radio <br/> <br/>
 
 ```
 import React, { useState } from 'react';
-import { Button } from '57wng/dist';
+import { Radio } from '57wng/dist';
 
 const Component = () => {
   const [state, setState] = useState('');
@@ -181,6 +181,7 @@ const Component = () => {
   return (
     <div>
       <Radio
+        customClass="custom-radio-class"
         options={['Option 1',  'Option 2']}
         name={'TEST'}
         inline={true}
@@ -191,7 +192,7 @@ const Component = () => {
   )
 }
 
-export default Button;
+export default Component;
 ```
 
 <hr/>
