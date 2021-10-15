@@ -295,8 +295,7 @@ if it is currently in progress please put a link to the working branch in the `i
 | Select |  |  | [here](https://mui.com/components/selects/) |
 | Slider |  |  | [here](https://mui.com/components/slider/) | 
 | Badge |  |  | [here](https://mui.com/components/badges/) |
-| Chip |  |  | [here](https://mui.com/components/chips/) |  
-| Radio |  |  | [here](https://mui.com/components/radio-buttons/) |  
+| Chip |  |  | [here](https://mui.com/components/chips/) |   
 | A |  |  | [here](https://mui.com/components/links/) |
 
 if it is currently in progress please put a link to the working branch in the `in progress` column and your name in the `by` column.
