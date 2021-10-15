@@ -2,6 +2,7 @@ import React from 'react';
 export const Button = ({
   value,
   color,
+  disabled,
   onClick,
   customClass
 }) => {
@@ -28,6 +29,7 @@ export const Button = ({
     "data-test": 'button-component'
   }, /*#__PURE__*/React.createElement("button", {
     "data-test": 'button',
+    disabled: disabled === undefined ? false : true,
     onClick: e => {
       createRipple(e);
 

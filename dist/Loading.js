@@ -1,9 +1,11 @@
-import React from "react";
+import React from 'react';
 
-const Loading = () => {
+const Loading = ({
+  customClass
+}) => {
   return /*#__PURE__*/React.createElement("div", {
-    "data-test": "loading-component",
-    className: "loading-container"
+    "data-test": 'loading-component',
+    className: `loading-container ${customClass === undefined ? '' : customClass}`
   }, /*#__PURE__*/React.createElement("svg", {
     className: "loader",
     viewBox: "0 0 120 120",
