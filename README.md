@@ -292,7 +292,7 @@ if it is currently in progress please put a link to the working branch in the `i
 
 | tags | in progress | by | example |
 |--|--|--|--|
-| Select |  |  | [here](https://mui.com/components/selects/) |
+| Dropdown |  |  | [here](https://mui.com/components/selects/) |
 | Slider |  |  | [here](https://mui.com/components/slider/) | 
 | Badge |  |  | [here](https://mui.com/components/badges/) |
 | Chip |  |  | [here](https://mui.com/components/chips/) |   
