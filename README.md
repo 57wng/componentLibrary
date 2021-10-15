@@ -25,6 +25,7 @@ README [text editor](https://stackedit.io)
 	1. [Modal](#modal)
 	2. [Avatar](#avatar)
 	3. [Loading](#loading)
+4. [TODO](#todo)
 
 ## GETTING STARTED
 
