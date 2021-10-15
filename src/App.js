@@ -5,15 +5,12 @@ import Avatar from './Components/Avatar';
 import Loading from './Components/Loading';
 import Radio from './Components/Radio';
 
+
 const App = () => {
   const [text, setText] = useState('');
   const [state, setState] = useState('');
 
-  const buttonTest = () => {
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then((response) => response.json())
-      .then((json) => console.log(json));
-  };
+  const buttonTest = () => {};
 
   return (
     <div data-test="app-component" className="App">
@@ -32,6 +29,7 @@ const App = () => {
         state={state}
       />
 
+
       <Button value={'Button Text'} color={'primary'} onClick={() => buttonTest()} />
       <Input
         type={'text'}
@@ -40,6 +38,17 @@ const App = () => {
         onChange={(e) => setText(e)}
         required={true}
       />
+
+      <Modal>
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+        <p>p</p>
+      </Modal>
+
       <h1>H1</h1>
       <h2>H2</h2>
       <h3>H3</h3>

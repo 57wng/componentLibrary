@@ -6,6 +6,7 @@
     top: 0;
     right: 0;
     background: rgba($black, 0.5);
+    backdrop-filter: blur(5px);
   }
 
   &__body {
@@ -14,6 +15,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: $white;
+
     width: 80%;
     padding: 2rem;
     border-radius: 15px;
