@@ -165,7 +165,7 @@ export default Component;
 ### Radio
 
 PROPS  <br/>
-`options` - takes and array of Integers or Strings and displays these values as options  <br/>
+`options` - takes an array of Integers or Strings and displays these values as options  <br/>
 `name` - sets a title for the radio group to tie the different radio options to a group <br/>
 `inline` - Boolean value to force radio to inline. (Defaults to a column view) <br/>
 `onChange` - Accepts a state function <br/>
