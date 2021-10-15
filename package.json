@@ -15,6 +15,7 @@
     "@testing-library/user-event": "^12.1.10",
     "check-prop-types": "^1.1.2",
     "node-sass": "^4.13.0",
+    "node-scss": "^7.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.5",
@@ -23,11 +24,12 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-mock-store": "^1.5.4",
     "redux-thunk": "^2.3.0",
+    "sass": "^1.43.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "build": "react-scripts build",
-    "test:unit": "react-scripts test --coverage",
+    "test:unit": "react-scripts test --watch-all --coverage",
     "eject": "react-scripts eject",
     "lint": "node_modules/.bin/eslint --ext /src",
     "publish:npm": "rm -rf dist && mkdir dist &&  babel src/Components -d dist --copy-files",
@@ -43,6 +45,7 @@
     "collectCoverageFrom": ["src/**/*.{js,jsx}", "!src/index.js"],
     "resetMocks": false
   },
+
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [

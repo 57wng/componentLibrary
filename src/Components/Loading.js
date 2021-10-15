@@ -3,6 +3,7 @@ import React from 'react';
 const Loading = ({ customClass }) => {
   return (
     <div
+
       data-test={'loading-component'}
       className={`loading-container ${customClass === undefined ? '' : customClass}`}
     >
