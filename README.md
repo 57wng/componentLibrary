@@ -196,6 +196,49 @@ export default Component;
 ```
 
 <hr/>
+### Input
+
+PROPS  <br/>
+`value` - The text inside the input that the user enters (this is based on state)  <br/>
+`onChange` - Function to change the state of the value.<br/>
+`label` - Label for the slider<br/>
+`min` - Minimum value for slider<br/>
+`max` - Maximum value for slider<br/>
+`step` - Sets the increment of values in a given slider<br/>
+`size` - height of the slider<br/>
+`defaultValue` - Sets the default number for a slider<br/>
+`required` - Is this a required field or not? Takes a boolean value.<br/>
+`customClass` - adds a custom class to the container of the Modal <br/> <br/>
+
+```
+import React, { useState } from 'react;
+import { Slider } from '57wng/dist';
+
+const Component = () => {
+  const [text, setValue] = useState('');
+  
+  return (
+    <div>
+      <Slider
+        value={text}
+        defaultValue={30}
+        label="Slider Label"
+        required={true}
+        size={"md"}
+        step={10}
+        min={0}
+        max={100}
+        onChange={(event) => setValue(event)}
+        customClass="custom-slider-class"
+      />
+    </div>
+  )
+}
+
+export default Component;
+```
+
+<hr/>
 
 ## INFO DISPLAY
 [top](#table-of-contents)
