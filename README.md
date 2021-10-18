@@ -22,6 +22,7 @@ README [text editor](https://stackedit.io)
 	2. [Input](#input)
 	3. [Textarea](#textarea)
 	4. [Radio](#radio)
+	5. [Dropdown](#dropdown)
 3. [Info Display](#info-display)
 	1. [Modal](#modal)
 	2. [Avatar](#avatar)
@@ -195,6 +196,42 @@ const Component = () => {
 }
 
 export default Component;
+```
+
+<hr/>
+
+[top](#table-of-contents)
+### Dropdown
+
+PROPS <br/>
+`label` - The title of the dropdown that the user enters. <br/>
+`value` - This is the parent component's state. <br/>
+`setState` - Function to change the state of the value.<br/>
+`options` - Array of  available options under the dropdown menu. <br/>
+`customClass` - adds a custom class to the container of the Dropdown <br/>  <br/>
+
+```
+import React, { useState } from 'react;
+import { Dropdown } from '57wng/dist';
+  
+const Component = () => {
+  const [state, setState] = useState('');  
+  
+    return (
+      <div>
+        <Input
+          label={'text'}
+          value={state}
+          setState={(event) => setState(event)}
+          options={[]}
+          customClass="custom-dropdown-class"
+        />
+      </div>
+    )
+}
+
+export default Component;
+
 ```
 
 <hr/>
