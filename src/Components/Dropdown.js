@@ -1,12 +1,12 @@
 import React from "react";
 
-const Dropdown = ({ label, value, options, setState }) => {
+const Dropdown = ({ label, value, options, setState, customClass }) => {
   if (options !== undefined) {
     options = ["", ...options];
   }
 
   return (
-    <div className={"dropdown-container"}>
+    <div className={`dropdown-container ${customClass === undefined ? '' : customClass}`}>
       <label className={`label ${value !== "" ? "filled-label": ""}`}>{label !== undefined && label}</label>
       <div className="inner-label">
         <select value={value} onChange={(e) => setState(e.target.value)}>
@@ -25,11 +25,4 @@ const Dropdown = ({ label, value, options, setState }) => {
   );
 };
 
-// {/* <select onChange={(event) => setState(event)}>
-//                     {options !== undefined && options.map((item, idx) => {
-//                         return (
-//                             <option value={item} key={idx}>{item}</option>
-//                         )
-//                     })}
-//                 </select> */}
 export default Dropdown;
