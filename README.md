@@ -22,7 +22,8 @@ README [text editor](https://stackedit.io)
 	2. [Input](#input)
 	3. [Textarea](#textarea)
 	4. [Radio](#radio)
-	5. [Dropdown](#dropdown)
+	5. [Slider](#slider)
+	6. [Dropdown](#dropdown)
 3. [Info Display](#info-display)
 	1. [Modal](#modal)
 	2. [Avatar](#avatar)
@@ -373,8 +374,6 @@ if it is currently in progress please put a link to the working branch in the `i
 
 | tags | in progress | by | example |
 |--|--|--|--|
-| Dropdown | [branch](https://github.com/57wng/componentLibrary/tree/Feature/Dropdown_Main_PLove) | Perri L. | [here](https://mui.com/components/selects/) |
-| Slider | [branch](https://github.com/57wng/componentLibrary/tree/Feature/Slider_Main_EMcPheron) | Evan Mc. | [here](https://mui.com/components/slider/) | 
 | Badge |  |  | [here](https://mui.com/components/badges/) |
 | Chip |  |  | [here](https://mui.com/components/chips/) |   
 | A |  |  | [here](https://mui.com/components/links/) |
