@@ -4,6 +4,7 @@
 
 ## QUICK NOTE
 ### DO NOT WORK ON `MASTER` BRANCH
+Please update the in progress chart at the bottom of ReadMe.
 
 ##### Branch Naming
 `Feature/Bug/Hotfix_NameOfComponent_BranchedFrom_ByDeveloper`
@@ -21,10 +22,12 @@ README [text editor](https://stackedit.io)
 	2. [Input](#input)
 	3. [Textarea](#textarea)
 	4. [Radio](#radio)
+	5. [Dropdown](#dropdown)
 3. [Info Display](#info-display)
 	1. [Modal](#modal)
 	2. [Avatar](#avatar)
 	3. [Loading](#loading)
+4. [TODO](#todo)
 
 ## GETTING STARTED
 
@@ -164,7 +167,7 @@ export default Component;
 ### Radio
 
 PROPS  <br/>
-`options` - takes and array of Integers or Strings and displays these values as options  <br/>
+`options` - takes an array of Integers or Strings and displays these values as options  <br/>
 `name` - sets a title for the radio group to tie the different radio options to a group <br/>
 `inline` - Boolean value to force radio to inline. (Defaults to a column view) <br/>
 `onChange` - Accepts a state function <br/>
@@ -236,6 +239,42 @@ const Component = () => {
 }
 
 export default Component;
+```
+
+<hr/>
+
+[top](#table-of-contents)
+### Dropdown
+
+PROPS <br/>
+`label` - The title of the dropdown that the user enters. <br/>
+`value` - This is the parent component's state. <br/>
+`setState` - Function to change the state of the value.<br/>
+`options` - Array of  available options under the dropdown menu. <br/>
+`customClass` - adds a custom class to the container of the Dropdown <br/>  <br/>
+
+```
+import React, { useState } from 'react;
+import { Dropdown } from '57wng/dist';
+  
+const Component = () => {
+  const [state, setState] = useState('');  
+  
+    return (
+      <div>
+        <Input
+          label={'text'}
+          value={state}
+          setState={(event) => setState(event)}
+          options={[]}
+          customClass="custom-dropdown-class"
+        />
+      </div>
+    )
+}
+
+export default Component;
+
 ```
 
 <hr/>
@@ -334,11 +373,10 @@ if it is currently in progress please put a link to the working branch in the `i
 
 | tags | in progress | by | example |
 |--|--|--|--|
-| Select |  |  | [here](https://mui.com/components/selects/) |
-| Slider |  |  | [here](https://mui.com/components/slider/) | 
+| Dropdown | [branch](https://github.com/57wng/componentLibrary/tree/Feature/Dropdown_Main_PLove) | Perri L. | [here](https://mui.com/components/selects/) |
+| Slider | [branch](https://github.com/57wng/componentLibrary/tree/Feature/Slider_Main_EMcPheron) | Evan Mc. | [here](https://mui.com/components/slider/) | 
 | Badge |  |  | [here](https://mui.com/components/badges/) |
-| Chip |  |  | [here](https://mui.com/components/chips/) |  
-| Radio |  |  | [here](https://mui.com/components/radio-buttons/) |  
+| Chip |  |  | [here](https://mui.com/components/chips/) |   
 | A |  |  | [here](https://mui.com/components/links/) |
 
 if it is currently in progress please put a link to the working branch in the `in progress` column and your name in the `by` column.
