@@ -13,6 +13,7 @@ const App = () => {
             value={state}
             onChange={(e) => setState(e.target.value)}
             step={4}
+            required={true}
             min={0}
             max={100}
         />

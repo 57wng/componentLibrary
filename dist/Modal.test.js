@@ -37,11 +37,4 @@ describe('Modal component', () => {
     const component = findByTestAttr(wrapper, 'open-button');
     component.props().onClick();
   });
-  test('click close modal button', () => {
-    const wrapper = setup();
-    const open = findByTestAttr(wrapper, 'open-button');
-    open.props().onClick();
-    const component = findByTestAttr(wrapper, 'close-button');
-    component.props().onClick();
-  });
 });

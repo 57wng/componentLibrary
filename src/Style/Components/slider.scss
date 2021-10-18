@@ -4,6 +4,12 @@
 
   p {
     margin-left: 10px;
+    color: $primary;
+    font-weight: 700;
+    font-size: .75rem;
+    span {
+      color: $danger;
+    }
   }
 
   input {

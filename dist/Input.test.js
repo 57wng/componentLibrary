@@ -2,9 +2,9 @@ import React from 'react';
 import Input from './Input';
 import { findByTestAttr } from '../test/testUtils';
 import { mount } from 'enzyme';
-const mockSetCurrentGuess = jest.fn();
+const mockSetCurrentValue = jest.fn();
 jest.mock('react', () => ({ ...jest.requireActual('react'),
-  useState: initialState => [initialState, mockSetCurrentGuess]
+  useState: initialState => [initialState, mockSetCurrentValue]
 }));
 
 const setup = (initialState = {}) => {
@@ -13,7 +13,7 @@ const setup = (initialState = {}) => {
     type: "text",
     placeholder: "FavoriteFood",
     value: initialState,
-    onChange: e => mockSetCurrentGuess(e)
+    onChange: e => mockSetCurrentValue(e)
   }));
 };
 
