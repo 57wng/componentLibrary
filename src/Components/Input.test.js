@@ -3,17 +3,17 @@ import Input from './Input';
 import {findByTestAttr} from '../test/testUtils';
 import {mount} from 'enzyme';
 
-const mockSetCurrentGuess = jest.fn();
+const mockSetCurrentValue = jest.fn();
 
 jest.mock('react', () => ({
     ...jest.requireActual('react'),
-    useState: (initialState) => [initialState, mockSetCurrentGuess],
+    useState: (initialState) => [initialState, mockSetCurrentValue],
 }));
 
 
 const setup = (initialState = {}) => {
     // NEED TO CALL MOUNT INSTEAD OF SHALLOW TO RUN `useEffect`
-    return mount(<Input type={"text"} placeholder={"FavoriteFood"} value={initialState} onChange={(e) => mockSetCurrentGuess(e)}/>);
+    return mount(<Input type={"text"} placeholder={"FavoriteFood"} value={initialState} onChange={(e) => mockSetCurrentValue(e)}/>);
 };
 
 describe('Input Component', () => {

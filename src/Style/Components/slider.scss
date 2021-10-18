@@ -1,0 +1,51 @@
+.slider-container {
+  width: 100%;
+  position: relative;
+
+  p {
+    margin-left: 10px;
+  }
+
+  input {
+    margin: 0;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    background: $grey-light;
+    border-radius: 10px;
+
+    &.sm {
+      height: 5px;
+    }
+
+    &.md {
+      height: 10px;
+    }
+
+    &.lg {
+      height: 20px;
+    }
+  }
+
+  .slider:hover {
+  }
+
+  .slider::-webkit-slider-thumb {
+    width: 25px;
+    height: 25px;
+    background: $primary;
+    border-radius: 50%;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: $primary;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
