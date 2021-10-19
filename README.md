@@ -265,7 +265,7 @@ const Component = () => {
   
     return (
       <div>
-        <Input
+        <Dropdown
           label={'text'}
           value={state}
           setState={(event) => setState(event)}
