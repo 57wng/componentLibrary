@@ -101,6 +101,7 @@ PROPS  <br/>
 `value` - The text inside the input that the user enters (this is based on state)  <br/>
 `type` - The type of input field you need ex:("text", "email", "number", "password") <br/>
 `onChange` - Function to change the state of the value.<br/>
+`name` - Takes a string if you are wanting to use formData for state change. <br/>
 `placeholder` - Placeholder/ Label for the input<br/>
 `required` - Is this a required field or not? Takes a boolean value.<br/>
 `customClass` - adds a custom class to the container of the Modal <br/> <br/>
