@@ -25,9 +25,10 @@ README [text editor](https://stackedit.io)
 	5. [Slider](#slider)
 	6. [Dropdown](#dropdown)
 3. [Info Display](#info-display)
-	1. [Modal](#modal)
-	2. [Avatar](#avatar)
-	3. [Loading](#loading)
+    1. [Card](#card)
+	2. [Modal](#modal)
+	3. [Avatar](#avatar)
+	4. [Loading](#loading)
 4. [TODO](#todo)
 
 ## GETTING STARTED
@@ -281,6 +282,40 @@ export default Component;
 <hr/>
 
 ## INFO DISPLAY
+
+[top](#table-of-contents)
+### Card
+
+PROPS <br/>
+`color` - passing the string "dark" will make it have a dark background with light text. <br/>
+`elevation` - Enter a number 1 - 5. The higher the number the more it appears to hover. <br/>
+`hover` - Boolean. If this is true then the card will appear to elevate when you hover over it.<br/>
+`customClass` - adds a custom class to the container of the Card <br/>  <br/>
+
+```
+import React from 'react;
+import { Card } from '57wng/dist';
+  
+const Component = () => {
+  
+    return (
+      <div>
+        <Card
+          color="dark"
+          elevation={3}
+          hover={true}
+          customClass="custom-dropdown-class"
+        />
+      </div>
+    )
+}
+
+export default Component;
+
+```
+
+<hr/>
+
 [top](#table-of-contents)
 
 ### Modal
