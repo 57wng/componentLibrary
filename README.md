@@ -419,7 +419,6 @@ if it is currently in progress please put a link to the working branch in the `i
 |--|--|--|--|
 | Alert |  |  | [here](https://mui.com/components/alert/) |
 | Accordion |  |  | [here](https://mui.com/components/accordion/) |
-| Card | [branch](https://github.com/57wng/componentLibrary/tree/Feature/Card_Main_EMcPheron) | Evan Mc. | [here](https://mui.com/components/cards/) |
 | Nav |  |  | [here](https://material.io/components/navigation-drawer#anatomy) |
 
 <hr/>
