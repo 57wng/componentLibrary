@@ -7,7 +7,7 @@ const Dropdown = ({ label, value, options, setState, customClass }) => {
 
   return (
     <div className={`dropdown-container ${customClass === undefined ? '' : customClass}`}>
-      <label className={`label ${value !== "" ? "filled-label": ""}`}>{label !== undefined && label}</label>
+      <label className={`label ${value !== "" && value !== undefined ? "filled-label": ""}`}>{label !== undefined && label}</label>
       <div className="inner-label">
         <select value={value} onChange={(e) => setState(e.target.value)}>
           {options !== undefined &&
