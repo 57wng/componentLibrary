@@ -6,5 +6,6 @@ import Avatar from './Avatar';
 import Loading from './Loading';
 import Radio from './Radio';
 import Dropdown from './Dropdown';
-import '../src/Style/import.scss';
-export { Button, Input, Textarea, Modal, Avatar, Loading, Radio, Dropdown };
+import Card from './Card';
+import '../Style/import.scss';
+export { Button, Input, Textarea, Modal, Avatar, Loading, Radio, Card, Dropdown };
