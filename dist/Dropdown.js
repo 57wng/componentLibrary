@@ -14,7 +14,7 @@ const Dropdown = ({
   return /*#__PURE__*/React.createElement("div", {
     className: `dropdown-container ${customClass === undefined ? '' : customClass}`
   }, /*#__PURE__*/React.createElement("label", {
-    className: `label ${value !== "" ? "filled-label" : ""}`
+    className: `label ${value !== "" && value !== undefined ? "filled-label" : ""}`
   }, label !== undefined && label), /*#__PURE__*/React.createElement("div", {
     className: "inner-label"
   }, /*#__PURE__*/React.createElement("select", {

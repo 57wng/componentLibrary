@@ -25,9 +25,10 @@ README [text editor](https://stackedit.io)
 	5. [Slider](#slider)
 	6. [Dropdown](#dropdown)
 3. [Info Display](#info-display)
-	1. [Modal](#modal)
-	2. [Avatar](#avatar)
-	3. [Loading](#loading)
+    1. [Card](#card)
+	2. [Modal](#modal)
+	3. [Avatar](#avatar)
+	4. [Loading](#loading)
 4. [TODO](#todo)
 
 ## GETTING STARTED
@@ -100,6 +101,7 @@ PROPS  <br/>
 `value` - The text inside the input that the user enters (this is based on state)  <br/>
 `type` - The type of input field you need ex:("text", "email", "number", "password") <br/>
 `onChange` - Function to change the state of the value.<br/>
+`name` - Takes a string if you are wanting to use formData for state change. <br/>
 `placeholder` - Placeholder/ Label for the input<br/>
 `required` - Is this a required field or not? Takes a boolean value.<br/>
 `customClass` - adds a custom class to the container of the Modal <br/> <br/>
@@ -263,7 +265,7 @@ const Component = () => {
   
     return (
       <div>
-        <Input
+        <Dropdown
           label={'text'}
           value={state}
           setState={(event) => setState(event)}
@@ -281,6 +283,40 @@ export default Component;
 <hr/>
 
 ## INFO DISPLAY
+
+[top](#table-of-contents)
+### Card
+
+PROPS <br/>
+`color` - passing the string "dark" will make it have a dark background with light text. <br/>
+`elevation` - Enter a number 1 - 5. The higher the number the more it appears to hover. <br/>
+`hover` - Boolean. If this is true then the card will appear to elevate when you hover over it.<br/>
+`customClass` - adds a custom class to the container of the Card <br/>  <br/>
+
+```
+import React from 'react;
+import { Card } from '57wng/dist';
+  
+const Component = () => {
+  
+    return (
+      <div>
+        <Card
+          color="dark"
+          elevation={3}
+          hover={true}
+          customClass="custom-dropdown-class"
+        />
+      </div>
+    )
+}
+
+export default Component;
+
+```
+
+<hr/>
+
 [top](#table-of-contents)
 
 ### Modal
@@ -384,7 +420,6 @@ if it is currently in progress please put a link to the working branch in the `i
 |--|--|--|--|
 | Alert |  |  | [here](https://mui.com/components/alert/) |
 | Accordion |  |  | [here](https://mui.com/components/accordion/) |
-| Card | [branch](https://github.com/57wng/componentLibrary/tree/Feature/Card_Main_EMcPheron) | Evan Mc. | [here](https://mui.com/components/cards/) |
 | Nav |  |  | [here](https://material.io/components/navigation-drawer#anatomy) |
 
 <hr/>

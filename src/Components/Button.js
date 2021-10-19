@@ -23,7 +23,9 @@ export const Button = ({ value, color, disabled, onClick, customClass }) => {
   };
 
   return (
-    <div className={'button-container'} data-test={'button-component'}>
+    <div className={`button-container ${
+        customClass === undefined ? '' : customClass
+    }`} data-test={'button-component'}>
       <button
         data-test={'button'}
         disabled={disabled === undefined ? false : true}

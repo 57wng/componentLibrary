@@ -25,7 +25,7 @@ export const Button = ({
   };
 
   return /*#__PURE__*/React.createElement("div", {
-    className: 'button-container',
+    className: `button-container ${customClass === undefined ? '' : customClass}`,
     "data-test": 'button-component'
   }, /*#__PURE__*/React.createElement("button", {
     "data-test": 'button',

@@ -5,6 +5,7 @@ const Input = ({
   value,
   type,
   required,
+  name,
   onChange,
   customClass
 }) => {
@@ -16,6 +17,7 @@ const Input = ({
     className: 'form__field',
     autoComplete: "off",
     id: placeholder,
+    name: name,
     type: type === undefined ? 'text' : type,
     value: value,
     required: required === undefined ? false : true,
