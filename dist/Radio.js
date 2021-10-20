@@ -17,9 +17,10 @@ const Radio = ({
       key: idx
     }, /*#__PURE__*/React.createElement("label", {
       htmlFor: idx,
-      "data-test": "radio-intput-component"
+      "data-test": "radio-input-component"
     }, /*#__PURE__*/React.createElement("input", {
       type: "radio",
+      "data-test": "radio-input-component",
       value: 'value',
       onClick: e => onChange(e.target.value),
       className: `${input}`,

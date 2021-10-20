@@ -5,7 +5,8 @@ import { mount } from 'enzyme';
 
 const setup = (initialState = {}) => {
   return mount( /*#__PURE__*/React.createElement(Radio, {
-    options: ['TEST']
+    options: ['TEST'],
+    onChange: e => e
   }));
 };
 
@@ -17,7 +18,11 @@ describe('Radio tests', () => {
   });
   test('clicking radio changes state', () => {
     const wrapper = setup();
-    const component = findByTestAttr(wrapper, 'radio-intput-component');
-    component.simulate('click');
+    const component = findByTestAttr(wrapper, 'radio-input-component');
+    component.at(1).props().onClick({
+      target: {
+        value: "test"
+      }
+    });
   });
 });

@@ -11,6 +11,7 @@ const Modal = ({
     "data-test": 'modal-component',
     className: `modal-container ${customClass === undefined ? '' : customClass}`
   }, /*#__PURE__*/React.createElement("div", {
+    "data-test": "overlay-button",
     className: 'overlay',
     onClick: () => setIsOpen(!isOpen)
   }), /*#__PURE__*/React.createElement("div", {

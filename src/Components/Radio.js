@@ -7,9 +7,10 @@ const Radio = ({ options, name, inline, onChange, state, customClass }) => {
         {options.map((input, idx) => {
           return (
             <div className={`radio-input ${inline ? 'inline' : ''}`} key={idx}>
-              <label htmlFor={idx} data-test="radio-intput-component">
+              <label htmlFor={idx} data-test="radio-input-component">
                 <input
                   type="radio"
+                  data-test={"radio-input-component"}
                   value={'value'}
                   onClick={(e) => onChange(e.target.value)}
                   className={`${input}`}

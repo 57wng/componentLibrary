@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Modal from './Modal';
 import { findByTestAttr } from '../test/testUtils';
+import { act } from "react-dom/test-utils";
 import { mount } from 'enzyme';
 const mockSetOpen = jest.fn();
 jest.mock('react', () => ({ ...jest.requireActual('react'),
-  useState: initialState => [initialState, mockSetOpen]
+  useState: jest.fn()
 }));
 let originalUseState;
 
@@ -19,6 +20,7 @@ describe('Modal component', () => {
     mockSetOpen.mockClear();
     originalUseState = React.useState;
     React.useState = jest.fn(() => [false, mockSetOpen]);
+    useState.mockImplementation(jest.requireActual('react').useState);
     wrapper = setup();
   });
   afterEach(() => {
@@ -29,12 +31,31 @@ describe('Modal component', () => {
     expect(component).toHaveLength(1);
   });
   test('isOpen is true', () => {
+    const wrapper = setup();
     const component = findByTestAttr(wrapper, 'modal-component');
     expect(component).toHaveLength(1);
   });
-  test('click open modal button', () => {
+  test("can click open button", () => {
     const wrapper = setup();
     const component = findByTestAttr(wrapper, 'open-button');
-    component.props().onClick();
+    act(() => {
+      /* fire events that update state */
+      component.props().onClick();
+    });
+    expect(component).toHaveLength(1);
+  });
+  test('click open modal button', () => {
+    useState.mockImplementation(() => [true, mockSetOpen]);
+    const wrapper = setup();
+    const closeButton = findByTestAttr(wrapper, 'close-button');
+    closeButton.props().onClick();
+    expect(closeButton).toHaveLength(1);
+  });
+  test('click overlay modal', () => {
+    useState.mockImplementation(() => [true, mockSetOpen]);
+    const wrapper = setup();
+    const closeButton = findByTestAttr(wrapper, 'overlay-button');
+    closeButton.props().onClick();
+    expect(closeButton).toHaveLength(1);
   });
 });

@@ -22,7 +22,7 @@ const Input = ({
     value: value,
     required: required === undefined ? false : true,
     placeholder: ' ',
-    onChange: e => onChange(e.target.value)
+    onChange: name !== undefined ? e => onChange(e) : e => onChange(e.target.value)
   }), /*#__PURE__*/React.createElement("label", {
     htmlFor: placeholder,
     className: 'form__label'
