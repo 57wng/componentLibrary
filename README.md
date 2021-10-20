@@ -412,7 +412,7 @@ if it is currently in progress please put a link to the working branch in the `i
 |--|--|--|--|
 | Badge |  |  | [here](https://mui.com/components/badges/) |
 | Chip |  |  | [here](https://mui.com/components/chips/) |   
-| A |  |  | [here](https://mui.com/components/links/) |
+| A |  |Cristian A.  | [here](https://mui.com/components/links/) |
 
 if it is currently in progress please put a link to the working branch in the `in progress` column and your name in the `by` column.
 
