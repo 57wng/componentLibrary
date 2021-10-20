@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Radio = ({ options, name, inline, onChange, state, customClass }) => {
   return (
@@ -10,7 +10,6 @@ const Radio = ({ options, name, inline, onChange, state, customClass }) => {
               <label htmlFor={idx} data-test="radio-intput-component">
                 <input
                   type="radio"
-                  value={'value'}
                   onClick={(e) => onChange(e.target.value)}
                   className={`${input}`}
                   id={idx}

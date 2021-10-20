@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Dropdown from "./Components/Dropdown";
-import {Input} from "./Components";
+import {Input, Alert } from "./Components";
 
 const App = () => {
     const [state, setState] = useState();
@@ -17,11 +17,13 @@ const App = () => {
 
     return <div data-test="app-component" className="App">
 
-        <Dropdown label={"Testing"} setState={(e) => setState(e)} value={state}
+        {/* <Dropdown label={"Testing"} setState={(e) => setState(e)} value={state}
                   options={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}/>
         <Input type={"text"}  placeholder={"Name"} onChange={(e) => setState(e)}/>
-        <Input type={"text"} value={address} name={"address"} placeholder={"Address"} onChange={(e) => change(e)}/>
+        <Input type={"text"} value={address} name={"address"} placeholder={"Address"} onChange={(e) => change(e)}/> */}
 
+        <Alert
+        options={[1, 2, 3]}/>
     </div>;
 };
 
