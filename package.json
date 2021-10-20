@@ -1,6 +1,6 @@
 {
   "name": "57wng",
-  "version": "0.1.27",
+  "version": "0.1.275",
   "private": false,
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "test:unit": "react-scripts test --watch-all --coverage",
+    "test:unit": "react-scripts test --watchAll --coverage",
     "eject": "react-scripts eject",
     "lint": "node_modules/.bin/eslint --ext /src",
     "publish:npm": "rm -rf dist && mkdir dist &&  babel src/Components -d dist --copy-files",

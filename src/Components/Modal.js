@@ -9,7 +9,7 @@ const Modal = ({ children, value, customClass }) => {
       data-test={'modal-component'}
       className={`modal-container ${customClass === undefined ? '' : customClass}`}
     >
-      <div className={'overlay'} onClick={() => setIsOpen(!isOpen)} />
+      <div data-test={"overlay-button"} className={'overlay'} onClick={() => setIsOpen(!isOpen)} />
       <div className={'modal-container__body'}>
         <Button
           data-test={'close-button'}
