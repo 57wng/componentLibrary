@@ -16,11 +16,3 @@ const Loading = ({ customClass }) => {
 };
 
 export default Loading;
-
-// create test component
-// create blank div
-// snag from code pen
-// create and edit css / html
-// import to import.scss
-// import and add to App.js to visually/manually test
-// import to Components.index.js

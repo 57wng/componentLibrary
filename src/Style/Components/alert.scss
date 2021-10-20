@@ -1,37 +1,190 @@
+// .alert-container {
+//   position: fixed;
+//   height: 2rem;
+//   width: 15rem;
+//   background-color: $grey-light;
+//   border-radius: 8px;
+//   margin-top: 1rem;
+//   margin-left: 1rem;
+
+//   &.primary {
+//     background: rgba($primary, 0.6);
+//     transition: all 0.3s ease;
+//     &:hover {
+//       background: $primary;
+//     }
+//     .close {
+//       color: $white;
+//       transition: all 0.5s ease;
+//     }
+//   }
+
+//   &.secondary {
+//     background: rgba($secondary, 0.6);
+//     transition: all 0.3s ease;
+//     &:hover {
+//       background: $secondary;
+//     }
+//     .close {
+//       color: $white;
+//       transition: all 0.5s ease;
+//     }
+//   }
+//   &.success {
+//     background: rgba($success, 0.6);
+//     transition: all 0.3s ease;
+//     &:hover {
+//       background: $success;
+//     }
+//     .close {
+//       color: $white;
+//       transition: all 0.5s ease;
+//     }
+//   }
+
+//   &.warn {
+//     background: rgba($warn, 0.6);
+//     transition: all 0.3s ease;
+//     &:hover {
+//       background: $warn;
+//     }
+//     .close {
+//       color: $white;
+//       transition: all 0.5s ease;
+//     }
+//   }
+
+//   &.danger {
+//     background: rgba($danger, 0.6);
+//     transition: all 0.3s ease;
+//     &:hover {
+//       background: $danger;
+//     }
+//     .close {
+//       color: $white;
+//       transition: all 0.5s ease;
+//     }
+//   }
+
+//   .close {
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     i {
+//       font-size: 1rem;
+//       position: absolute;
+//       top: 5px;
+//       right: 5px;
+//       cursor: pointer;
+//       transform: rotate(0deg);
+//       transition: all 0.3s ease;
+
+//       &:hover {
+//         transform: rotate(90deg);
+//       }
+//     }
+//   }
+
+//   label{
+//     outline: 1px solid red;
+//   }
+
+//   .title {
+//     outline: 1px solid red;
+//     position: relative;
+//     right: 5rem;
+//     font-size: 20px;
+//     top: 10px;
+//   }
+// }
+
 .alert-container {
   position: fixed;
+  border-radius: 8px;
   height: 2rem;
   width: 15rem;
-  background-color: lightgray;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  margin-top: 1rem;
+
+  .alert-options {
+    width: 100%;
+    background: red;
+    padding: 10px;
+    border-radius: 10px;
+
+    &.primary {
+      background: rgba($primary, 0.6);
+      transition: all 0.3s ease;
+      &:hover {
+        background: $primary;
+      }
+      .close {
+        color: $white;
+        transition: all 0.5s ease;
+      }
+    }
+
+    &.secondary {
+      background: rgba($secondary, 0.6);
+      transition: all 0.3s ease;
+      &:hover {
+        background: $secondary;
+      }
+      .close {
+        color: $white;
+        transition: all 0.5s ease;
+      }
+    }
+    &.success {
+      background: rgba($success, 0.6);
+      transition: all 0.3s ease;
+      &:hover {
+        background: $success;
+      }
+      .close {
+        color: $white;
+        transition: all 0.5s ease;
+      }
+    }
+
+    &.warn {
+      background: rgba($warn, 0.6);
+      transition: all 0.3s ease;
+      &:hover {
+        background: $warn;
+      }
+      .close {
+        color: $white;
+        transition: all 0.5s ease;
+      }
+    }
+
+    &.danger {
+      background: rgba($danger, 0.6);
+      transition: all 0.3s ease;
+      &:hover {
+        background: $danger;
+      }
+      .close {
+        color: $white;
+        transition: all 0.5s ease;
+      }
+    }
+  }
 
   .close {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    width: 1rem;
-    height: 1rem;
-    opacity: 0.6;
+    display: flex;
+    align-items: space-around;
+    justify-content: space-between;
+    width: 100%;
   }
-  .close:hover {
-    opacity: 1;
+
+  .alert-options .option1 {
+    width: 100%;
   }
-  .close:before, .close:after {
-    position: absolute;
-    left: 1rem;
-    content: ' ';
-    height: 2px;
-    width: 12px;
-    background-color: $primary;
+
+  .title {
+    text-align: center;
   }
-  .close:before {
-    transform: rotate(45deg);
-  }
-  .close:after {
-    transform: rotate(-45deg);
+
+  .body {
   }
 }
