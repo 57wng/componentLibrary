@@ -412,15 +412,15 @@ if it is currently in progress please put a link to the working branch in the `i
 |--|--|--|--|
 | Badge |  |  | [here](https://mui.com/components/badges/) |
 | Chip |  |  | [here](https://mui.com/components/chips/) |   
-| A |[Anchor_Main_Arroyo](https://github.com/crisboxing11/componentLibrary/tree/Anchor_Main_Arroyo) | Cristian.A  | [here](https://mui.com/components/links/) |
+| A |[branch](https://github.com/crisboxing11/componentLibrary/tree/Anchor_Main_Arroyo) | Cristian A.  | [here](https://mui.com/components/links/) |
 
 if it is currently in progress please put a link to the working branch in the `in progress` column and your name in the `by` column.
 
 | components | in progress | by | example |
 |--|--|--|--|
-| Alert |[Feature/Alert_Main_PLove](https://github.com/57wng/componentLibrary/tree/Feature/Alert_Main_PLove)  | Perri L. | [here](https://mui.com/components/alert/) |
+| Alert |[branch](https://github.com/57wng/componentLibrary/tree/Feature/Alert_Main_PLove)  | Perri L. | [here](https://mui.com/components/alert/) |
 | Accordion |  |  | [here](https://mui.com/components/accordion/) |
-| Nav |  |  | [here](https://material.io/components/navigation-drawer#anatomy) |
+| Nav | [branch](https://github.com/57wng/componentLibrary/tree/Feature/Nav_Main_EMcPheron) | Evan Mc. | [here](https://material.io/components/navigation-drawer#anatomy) |
 
 <hr/>
 
